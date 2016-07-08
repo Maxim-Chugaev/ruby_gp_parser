@@ -1,4 +1,7 @@
 require "ruby_gp_parser/version"
+require "uri"
+require "net/http"
+require "nokogiri"
 
 module RubyGpParser
 
