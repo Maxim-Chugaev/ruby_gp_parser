@@ -72,7 +72,9 @@ module RubyGpParser
 
   def load_content_of_cat(uri, page_count = 1, num = 100)
 
-    data = deep_load_cat(uri, page_count, num)
+    pkgs = deep_load_cat(uri, page_count, num)
+
+    data = pkgs.map {|pkg| details_pkg_load(pkg) }
 
     IO.write('content.json', JSON.pretty_generate(data))
 
