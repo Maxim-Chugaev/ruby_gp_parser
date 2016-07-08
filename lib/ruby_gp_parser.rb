@@ -1,7 +1,7 @@
 require "ruby_gp_parser/version"
 require 'rubygems'
-require 'bundler/setup'
 require 'json'
+require 'bundler/setup'
 
 module RubyGpParser
 
